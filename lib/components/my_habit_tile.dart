@@ -20,7 +20,7 @@ class MyHabitTile extends StatelessWidget {
           //edit
           SlidableAction(
             onPressed:editHabit,
-            backgroundColor: Colors.grey.shade800,
+            backgroundColor: Colors.grey.shade700,
             icon:Icons.settings,
             borderRadius: BorderRadius.circular(8),
           ),
@@ -43,7 +43,7 @@ class MyHabitTile extends StatelessWidget {
       },
     child:Container(
       decoration: BoxDecoration(
-        color: isCompleted ? Colors.green :Theme.of(context).colorScheme.secondary,
+        color: isCompleted ? Colors.green : Theme.of(context).colorScheme.secondary,
         borderRadius: BorderRadius.circular(8),
       ),
       padding: const EdgeInsets.all(12),
