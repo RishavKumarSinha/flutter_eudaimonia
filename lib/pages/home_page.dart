@@ -172,7 +172,7 @@ void deleteHabitBox(Habit habit){
       floatingActionButton: FloatingActionButton(
         onPressed:createNewHabit,
         elevation: 0,
-        backgroundColor: Theme.of(context).colorScheme.tertiary,
+        backgroundColor: Theme.of(context).colorScheme.secondary,
         child:  Icon(Icons.add,color:  Provider.of<ThemeProvider>(context).themeData==darkMode ? Colors.white:Colors.black87,),
       ),
       body: ListView(
