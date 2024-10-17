@@ -161,9 +161,9 @@ void deleteHabitBox(Habit habit){
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
-      backgroundColor: Theme.of(context).colorScheme.background,
+      backgroundColor: Theme.of(context).colorScheme.surface,
       appBar: AppBar(
-         backgroundColor: Theme.of(context).colorScheme.background,
+         backgroundColor: Theme.of(context).colorScheme.surface,
         elevation: 0,
         foregroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: const Text("Habit Tracker"),
@@ -171,7 +171,7 @@ void deleteHabitBox(Habit habit){
       drawer: const MyDrawer(),
       floatingActionButton: FloatingActionButton(
         onPressed:createNewHabit,
-        elevation: 0,
+        elevation: 20,
         backgroundColor: Theme.of(context).colorScheme.secondary,
         child:  Icon(Icons.add,color:  Provider.of<ThemeProvider>(context).themeData==darkMode ? Colors.white:Colors.black87,),
       ),
