@@ -199,10 +199,13 @@ void deleteHabitBox(Habit habit){
     return FutureBuilder<DateTime?>(future: habitDatabase.getFirstLaunchDate(), builder: ((context, snapshot) {
       //once the data is available build the heatmap
       if(snapshot.hasData){
-        return MyHeatMap(
-          startDate: snapshot.data!,
-         datasets: prepHeatMapDataset(currentHabits),
-         );
+        return SizedBox(
+          height: 370,  // Specify the height
+          child: MyHeatMap(
+            startDate: snapshot.data!,
+            datasets: prepHeatMapDataset(currentHabits),
+          ),
+        );
       }
       //handle case where no data is returned
       else{
